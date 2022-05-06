@@ -1,4 +1,5 @@
 # matrix_srun_manager
+Author: Holmes Yue Wu  
 
 This script checks nodes on matrix and determines if the requested resource type is actualizable, and returns a srun command to fulfill the request.
 
