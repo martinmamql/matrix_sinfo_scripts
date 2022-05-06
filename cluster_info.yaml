@@ -1,0 +1,166 @@
+gpu_clusters:
+- cluster : "matrix-0-26"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "GTX 1080"
+- cluster : "matrix-0-28"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "GTX 1080"
+- cluster : "matrix-0-30"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "GTX 1080"
+- cluster : "matrix-0-32"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "GTX 1080"
+- cluster : "matrix-0-16"
+  gpu_num : 4
+  vram : 12
+  gpu_desc : "Titan Xp"
+- cluster : "matrix-0-18"
+  gpu_num : 4
+  vram : 12
+  gpu_desc : "Titan Xp"
+- cluster : "matrix-0-22"
+  gpu_num : 4
+  vram : 12
+  gpu_desc : "Titan Xp"
+- cluster : "matrix-0-11"
+  gpu_num : 3
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-0-36"
+  gpu_num : 3
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-0-5"
+  gpu_num : 4
+  vram : 12
+  gpu_desc : "Titan Xp"
+- cluster : "matrix-0-7"
+  gpu_num : 4
+  vram : 12
+  gpu_desc : "Titan Xp"
+- cluster : "matrix-0-9"
+  gpu_num : 4
+  vram : 12
+  gpu_desc : "Titan Xp"
+- cluster : "matrix-1-12"
+  gpu_num : 3
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-1-4"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-1-8"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-1-6"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-1-10"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-0-34"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-1"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-3"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-5"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-7"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-9"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-11"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-13"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-15"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-17"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-19"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-21"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-2-23"
+  gpu_num : 4
+  vram : 11
+  gpu_desc : "RTX 2080Ti"
+- cluster : "matrix-0-24"
+  gpu_num : 4
+  vram : 16
+  gpu_desc : "Tesla V100"
+- cluster : "matrix-1-16"
+  gpu_num : 8
+  vram : 32
+  gpu_desc : "Tesla V100"
+gpus:
+  2080Ti : 
+    name : "RTX 2080Ti"
+    vram : 11
+    archi : "turing"
+  A100 : 
+    name : "Tesla A100"
+    vram : 40
+    archi : "ampere"
+  P40 :
+    name : "Tesla V100"
+    vram : 32
+    archi : "volta"
+  volta :
+    name : "Tesla V100"
+    vram : 32
+    archi : "volta"
+  titanx : 
+    name : "Titan Xp"
+    vram : 12
+    archi : "pascal"
+  1080Ti :
+    name : "GTX 1080Ti"
+    vram : 8
+    archi : "pascal"
+archi :
+- pascal
+- volta
+- turing
+- ampere
+permissible_partitions :
+- russ_reserved
+exclude_features:
+  matrix-1-16:
+    - "no-x"
+  matrix-1-12:
+    - "no-x"
